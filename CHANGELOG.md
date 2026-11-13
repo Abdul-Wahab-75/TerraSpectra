@@ -1,27 +1,16 @@
-# Changelog — Abdul (Backend & Dashboard)
+# Changelog — Abdul (Day 2)
 
-All notable changes to Abdul's dashboard module will be documented in this file.
-
-## [Day 1] — Research & Design Phase
-
+## [Day 2] - 2024-11-12
 ### Added
-- `dashboard_requirements.md` — Comprehensive dashboard requirements with 6 page specifications, user personas, and non-functional requirements
-- `technology_research.md` — Technology comparison (Streamlit vs Dash vs Gradio) and selection rationale
-- `wireframe_design.md` — Text-based wireframes for all 6 dashboard pages with color scheme and layout specifications
-- `app_architecture.md` — Application architecture plan covering multipage structure, caching, session state, and error handling
-- `README.md` — Day 1 overview and deliverable summary
-- `TEST_RESULTS.md` — Test results placeholder (research phase)
+- Created `app_skeleton.py` providing runnable Streamlit prototype with multi-page navigation.
+- Injected custom CSS agricultural design system: `#1B5E20` (Forest Green), `#4CAF50` (Leaf Green), clean cards, and responsive headers.
+- Implemented sidebar navigation with real-time telemetry metrics (293 plants, 180 bands, 5 classes).
+- Built interactive mockups across all 6 views:
+  1. Overview & Objectives
+  2. Dataset Explorer (with class bar charts and catalog tables)
+  3. Spectral Analysis (with interactive line charts of Red Edge shift)
+  4. Disease Prediction (with file uploader widget for `.mat` files)
+  5. Model Performance (ready for benchmark metrics)
+  6. Temporal Analysis (with explicit scientific integrity disclaimer)
+- Compiled `ui_navigation_spec.md` with complete route definitions.
 
-### Research Completed
-- Dashboard UX best practices for scientific/agricultural applications
-- Technology stack evaluation and final selection (Streamlit + Plotly)
-- Color scheme definition (dark green primary palette)
-- User persona analysis (researchers, pathologists, students)
-- Deployment strategy evaluation
-
-### Decisions Made
-- **Framework**: Streamlit (over Dash and Gradio)
-- **Visualization**: Plotly for interactive charts, Matplotlib for static exports
-- **Color Palette**: Primary #1B5E20, Secondary #4CAF50, Accent #81C784
-- **Architecture**: Multipage Streamlit with centralized session state
-- **Caching**: `st.cache_data` for datasets, `st.cache_resource` for ML models
