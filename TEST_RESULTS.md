@@ -1,18 +1,17 @@
-# Test Results — Abdul (Day 4)
+# Test Results — Abdul (Day 5)
 
 ## Test Execution Details
-- **Test File**: `test_spectral_page.py`
-- **Component Tested**: `02_Spectral_Analysis.py`
+- **Test File**: `test_preprocessing_ui.py`
+- **Component Tested**: `preprocessing_viewer.py`
 - **Result**: ALL TESTS PASSED
 
 ## Execution Output
 ```text
-Page 02_Spectral_Analysis syntax and AST compilation verified!
+Preprocessing comparison component compiled successfully with zero syntax errors!
 ```
 
-## Functional Capabilities Verified
-- Live rendering of 5 multi-class Plotly traces with unified hover tooltips.
-- Shaded physiological region rectangles (Visible, Red Edge, NIR Plateau) overlaying continuous curves.
-- Dynamic dropdown-driven $\pm 1\sigma$ envelope computation.
-- Automated annotation of peak $|\Delta R|$ difference.
+## Features Verified
+- Correct generation of $2 \times 2$ Plotly subplots.
+- Synchronized x-axis spanning $400 - 1000\text{ nm}$.
+- Automated derivation of SNV, Savitzky-Golay smoothing, and 1st derivative curves for any selected plant sample.
 

@@ -1,17 +1,20 @@
-# Abdul — Day 4: Interactive Spectral Signatures & Plotly Visualization
+# Abdul — Day 5: Preprocessing Progression Visualizer
 
 ## Objectives
-- Implement `main project/dashboard/pages/02_Spectral_Analysis.py` and local Day 4 snapshot.
-- Build multi-class interactive Plotly curves across 180 continuous bands.
-- Integrate interactive $\pm 1\sigma$ standard deviation envelopes with dynamic shading.
-- Build differential reflectance calculator ($\Delta R$) with interactive class comparison and peak delta annotations.
+- Implement `main project/dashboard/components/preprocessing_viewer.py` and local Day 5 snapshot.
+- Build interactive 4-stage Plotly subplot panel displaying:
+  1. Raw physical reflectance.
+  2. Standard Normal Variate (SNV) baseline-corrected profile.
+  3. Savitzky-Golay denoised smoothing curve.
+  4. Numerical 1st derivative displaying the Red Edge slope.
+- Verify AST compilation and UI component integrity.
 
 ## Deliverables
-- `spectral_analysis_page.py`: Interactive spectral analysis Streamlit view.
-- `test_spectral_page.py`: AST and compilation verification test.
-- `TEST_RESULTS.md`: Execution verification report.
-- `CHANGELOG.md`: Progress log from Day 3 to Day 4.
+- `preprocessing_visualizer.py`: Reusable Streamlit component.
+- `test_preprocessing_ui.py`: Automated syntax compilation test.
+- `TEST_RESULTS.md`: Output test log.
+- `CHANGELOG.md`: Progress log from Day 4 to Day 5.
 
-## Next Steps (Day 5)
-- Implement interactive before/after preprocessing comparison visualizer (raw vs SNV vs Savitzky-Golay smoothed).
+## Next Steps (Day 6)
+- Build interactive PCA scree plot and 2D/3D component scatter visualizations in Streamlit.
 
