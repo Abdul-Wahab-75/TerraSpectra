@@ -1,20 +1,17 @@
-# Abdul — Day 5: Preprocessing Progression Visualizer
+# Abdul — Day 6: Interactive PCA Latent Manifold & Scree Visualization
 
 ## Objectives
-- Implement `main project/dashboard/components/preprocessing_viewer.py` and local Day 5 snapshot.
-- Build interactive 4-stage Plotly subplot panel displaying:
-  1. Raw physical reflectance.
-  2. Standard Normal Variate (SNV) baseline-corrected profile.
-  3. Savitzky-Golay denoised smoothing curve.
-  4. Numerical 1st derivative displaying the Red Edge slope.
-- Verify AST compilation and UI component integrity.
+- Implement `main project/dashboard/components/pca_viewer.py` and local Day 6 snapshot.
+- Build interactive Scree Plot tracking individual and cumulative variance ($>95\%$ threshold marker).
+- Build 2D and 3D rotatable scatter plots using Plotly Express with custom agricultural palette.
+- Render eigenvector wavelength loading curves across $400 - 1000\text{ nm}$ for PC1, PC2, and PC3.
 
 ## Deliverables
-- `preprocessing_visualizer.py`: Reusable Streamlit component.
-- `test_preprocessing_ui.py`: Automated syntax compilation test.
+- `pca_visualization_component.py`: Streamlit PCA exploratory module.
+- `test_pca_ui.py`: Automated AST syntax compilation test.
 - `TEST_RESULTS.md`: Output test log.
-- `CHANGELOG.md`: Progress log from Day 4 to Day 5.
+- `CHANGELOG.md`: Progress log from Day 5 to Day 6.
 
-## Next Steps (Day 6)
-- Build interactive PCA scree plot and 2D/3D component scatter visualizations in Streamlit.
+## Next Steps (Day 7)
+- Build the baseline model evaluation dashboard and prediction interface.
 

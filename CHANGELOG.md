@@ -1,9 +1,10 @@
-# Changelog — Abdul (Day 5)
+# Changelog — Abdul (Day 6)
 
-## [Day 5] - 2024-11-12
+## [Day 6] - 2024-11-12
 ### Added
-- Developed `render_preprocessing_comparison()` component in `main project/dashboard/components/preprocessing_viewer.py`.
-- Connected Prince's `SNVTransformer` and `SavitzkyGolayTransformer` into live dashboard UI.
-- Provided 4 synchronized subplots with custom colors (#2E7D32, #1565C0, #FB8C00, #D32F2F).
-- Authored and verified `test_preprocessing_ui.py`.
+- Developed `render_pca_analytics()` in `main project/dashboard/components/pca_viewer.py`.
+- Integrated Plotly interactive scree plot displaying individual and cumulative variance.
+- Implemented 2D and 3D rotatable scatter plots showing clear class trajectories from Level 0 to Level 4.
+- Created PC1, PC2, and PC3 wavelength loadings curves illustrating physical feature contributions.
+- Authored and verified `test_pca_ui.py`.
 
