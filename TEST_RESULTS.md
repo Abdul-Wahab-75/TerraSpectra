@@ -1,18 +1,18 @@
-# Test Results — Abdul (Day 7)
+# Test Results — Abdul (Day 8)
 
 ## Test Execution Details
-- **Test File**: `test_prediction_page.py`
-- **Component Tested**: `03_Disease_Prediction.py`
+- **Test File**: `test_performance_page.py`
+- **Component Tested**: `04_Model_Performance.py`
 - **Result**: ALL TESTS PASSED
 
 ## Execution Output
 ```text
-Page 03_Disease_Prediction compiled successfully with zero syntax errors!
+Page 04_Model_Performance compiled successfully with zero syntax errors!
 ```
 
 ## Features Verified
-- Dynamic loading of trained model artifact (`random_forest_baseline.joblib`).
-- Streamlit caching via `@st.cache_resource` for zero-lag subsequent predictions.
-- Dynamic input mode switching (Catalog vs File Upload).
-- Real-time rendering of confidence badge, multi-class probability chart, and biomarker metrics.
+- Dynamic table rendering from `model_leaderboard.csv`.
+- Interactive confusion matrix heatmap with 'Greens' color palette.
+- Dynamic normalization calculation ($100.0\%$ healthy sensitivity, $78.6\%$ asymptomatic sensitivity).
+- Grouped bar chart comparing Accuracy vs Macro F1 against naive baselines.
 

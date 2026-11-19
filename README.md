@@ -1,19 +1,17 @@
-# Abdul — Day 7: Real-Time Disease Severity Diagnostic Interface
+# Abdul — Day 8: Model Performance Benchmarking & Confusion Matrix Dashboard
 
 ## Objectives
-- Implement `main project/dashboard/pages/03_Disease_Prediction.py` and local Day 7 snapshot.
-- Connect interface to Meet's `DiseasePredictionPipeline` and Shravani's trained Random Forest baseline model.
-- Provide dual input paths: catalog specimen dropdown or custom `.mat` file uploader.
-- Render dynamic diagnosis outcome card with severity badge, clinical description, and classification confidence gauge.
-- Display horizontal bar chart of calibrated class probabilities across all 5 clinical stages.
-- Embed mandatory scientific limitation notice distinguishing current diagnosis from temporal forecasting.
+- Implement `main project/dashboard/pages/04_Model_Performance.py` and local Day 8 snapshot.
+- Connect to Meet's `ExperimentTracker` to dynamically populate the model leaderboard.
+- Build interactive Plotly confusion matrix heatmap supporting both raw integer counts and row-normalized recall percentages.
+- Build class-wise precision, recall, and F1 grouped bar charts.
 
 ## Deliverables
-- `prediction_interface_page.py`: Fully wired diagnostic UI view.
-- `test_prediction_page.py`: Automated AST syntax compilation test.
+- `model_performance_page.py`: Performance benchmarking dashboard view.
+- `test_performance_page.py`: Automated AST syntax compilation test.
 - `TEST_RESULTS.md`: Output test log.
-- `CHANGELOG.md`: Progress log from Day 6 to Day 7.
+- `CHANGELOG.md`: Progress log from Day 7 to Day 8.
 
-## Next Steps (Day 8)
-- Build model performance dashboard (confusion matrices, ROC-AUC, classification reports) in `04_Model_Performance.py`.
+## Next Steps (Day 9)
+- Integrate deep learning model prediction outputs and 1D-CNN loss curves into the UI.
 
