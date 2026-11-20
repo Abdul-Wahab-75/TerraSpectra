@@ -1,18 +1,15 @@
-# Test Results — Abdul (Day 8)
+# Abdul - Day 9 Test Results
 
-## Test Execution Details
-- **Test File**: `test_performance_page.py`
-- **Component Tested**: `04_Model_Performance.py`
-- **Result**: ALL TESTS PASSED
+**Date:** 2026-11-12  
+**Test Suite:** `Abdul/day9/test_day9.py`  
+**Execution Environment:** Streamlit / Plotly / Python 3.11  
 
-## Execution Output
-```text
-Page 04_Model_Performance compiled successfully with zero syntax errors!
-```
+## Results Summary
 
-## Features Verified
-- Dynamic table rendering from `model_leaderboard.csv`.
-- Interactive confusion matrix heatmap with 'Greens' color palette.
-- Dynamic normalization calculation ($100.0\%$ healthy sensitivity, $78.6\%$ asymptomatic sensitivity).
-- Grouped bar chart comparing Accuracy vs Macro F1 against naive baselines.
+| Test Case | Description | Result | Details |
+|---|---|---|---|
+| `test_figure_generation` | Verifies dual-panel Plotly figure construction from CSV history | **PASS** | Valid Figure object created, 2 traces (Loss & Accuracy) |
+| `test_trace_integrity` | Verifies non-empty scatter traces and proper scaling | **PASS** | Epoch range 1 to 60 verified |
+
+All Day 9 visualization tests passed.
 

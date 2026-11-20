@@ -1,10 +1,9 @@
-# Changelog — Abdul (Day 8)
+# Abdul - Day 9 Changelog
 
-## [Day 8] - 2024-11-12
+## [Day 9] - 2026-11-12
+
 ### Added
-- Developed `main project/dashboard/pages/04_Model_Performance.py`.
-- Integrated live leaderboard displaying candidate model rankings by Macro F1.
-- Implemented Plotly annotated confusion matrix with dynamic toggle between raw specimen count and normalized recall.
-- Implemented grouped sensitivity bar charts highlighting $100\%$ detection recall for Healthy control (Level 0).
-- Authored and verified `test_performance_page.py`.
+- Created `Abdul/day9/cnn_dashboard_component.py` rendering dual-panel Plotly figures for loss and accuracy trajectories.
+- Integrated `cnn_training_history.csv` data parser with defensive error handling.
+- Added `Abdul/day9/test_day9.py` unit test suite.
 
