@@ -1,9 +1,9 @@
-# Abdul - Day 9 Changelog
+# Abdul - Day 10 Changelog
 
-## [Day 9] - 2026-11-12
+## [Day 10] - 2026-11-12
 
 ### Added
-- Created `Abdul/day9/cnn_dashboard_component.py` rendering dual-panel Plotly figures for loss and accuracy trajectories.
-- Integrated `cnn_training_history.csv` data parser with defensive error handling.
-- Added `Abdul/day9/test_day9.py` unit test suite.
+- Created `Abdul/day10/model_comparison_dashboard.py` featuring multi-metric grouped bar charts.
+- Added data binding to `final_model_evaluation_metrics.csv`.
+- Created automated test `Abdul/day10/test_day10.py`.
 

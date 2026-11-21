@@ -1,15 +1,15 @@
-# Abdul - Day 9 Test Results
+# Abdul - Day 10 Test Results
 
 **Date:** 2026-11-12  
-**Test Suite:** `Abdul/day9/test_day9.py`  
+**Test Suite:** `Abdul/day10/test_day10.py`  
 **Execution Environment:** Streamlit / Plotly / Python 3.11  
 
 ## Results Summary
 
 | Test Case | Description | Result | Details |
 |---|---|---|---|
-| `test_figure_generation` | Verifies dual-panel Plotly figure construction from CSV history | **PASS** | Valid Figure object created, 2 traces (Loss & Accuracy) |
-| `test_trace_integrity` | Verifies non-empty scatter traces and proper scaling | **PASS** | Epoch range 1 to 60 verified |
+| `test_comparison_bar_chart` | Builds grouped bar chart across 7 models and 3 metrics | **PASS** | Valid Plotly Figure object with 3 traces |
+| `test_data_binding` | Binds directly to `final_model_evaluation_metrics.csv` | **PASS** | Successfully parsed all 7 model rows |
 
-All Day 9 visualization tests passed.
+All Day 10 visualization tests passed.
 
